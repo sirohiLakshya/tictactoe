@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffcc70, #ff6347);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    border: 2px solid #ff6347;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    user-select: none;
+}
+
+.cell:hover {
+    background: #ffcc70;
+}
+
+.cell.X {
+    color: #ff6347;
+    font-size: 3em;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+.cell.O {
+    color: #ffcc70;
+    font-size: 3em;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background: #ff6347;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #ffcc70;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
